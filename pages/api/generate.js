@@ -27,8 +27,8 @@ export default async function (req, res) {
 
   try {
     const completion = await openai.createCompletion({
-      //model: "text-davinci-003",
-      model: "ft-mVM1KjFwqpIzUDqm3ExL1dwy",
+      model: "text-davinci-003",
+      //model: "ft-mVM1KjFwqpIzUDqm3ExL1dwy",
       prompt: generatePrompt(query),
       temperature: 0.4,
       max_tokens: 100,
